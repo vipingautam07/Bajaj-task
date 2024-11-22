@@ -13,7 +13,7 @@ const TextInput = ({ onResponse }) => {
   const handleSubmit = async () => {
     try {
       const data = JSON.parse(jsonInput);
-      const response = await axios.post("bajaj-task-backend-seven.vercel.app/bfhl", data);
+      const response = await axios.post("https://bajaj-task-backend-seven.vercel.app/bfhl", data);
       onResponse(response.data);
       setError("");
     } catch (err) {
